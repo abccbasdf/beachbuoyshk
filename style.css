@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  /* Logo Styles */
+.logo {
+  position: absolute; /* Positions the logo absolutely within the header */
+  top: 1px; /* Distance from the top */
+  left: 5px; /* Distance from the left */
+}
+
+.logo img {
+  height: 140px; /* Adjust the height of the logo */
+  width: auto; /* Maintains aspect ratio */
+}
+
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Hero Section with Background Image */
+  .hero {
+    background-image: url('images/1.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Gallery Section */
+  .gallery {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-container img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  /* Lightbox Styles */
+#lightbox {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  z-index: 1000; /* Ensures it appears above other content */
+  text-align: center;
+}
+
+#lightbox img {
+  max-width: 90%; /* Limits the width to 90% of the viewport */
+  max-height: 90vh; /* Limits the height to 90% of the viewport height */
+  margin: auto; /* Centers the image */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfectly centers the image */
+}
+
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#prev, #next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Gallery Styles */
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery-item img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
