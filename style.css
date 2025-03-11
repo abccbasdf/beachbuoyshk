@@ -25,6 +25,11 @@ body {
   width: auto; /* Maintains aspect ratio */
 }
 
+@media (max-width: 768px) {
+  .logo img {
+    height: 40px; /* Smaller logo for mobile */
+  }
+}
   header nav ul {
     list-style: none;
     padding: 0;
@@ -147,11 +152,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .logo img {
-    height: 10px; /* Smaller logo for mobile */
-  }
-}
 
 .gallery-item img:hover {
   transform: scale(1.05);
