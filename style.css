@@ -147,9 +147,9 @@ body {
   transition: transform 0.3s ease;
 }
 
-@media (max-width: 10px) {
+@media (max-width: 768px) {
   .logo img {
-    height: 40px; /* Smaller logo for mobile */
+    height: 10px; /* Smaller logo for mobile */
   }
 }
 
